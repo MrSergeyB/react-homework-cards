@@ -5,7 +5,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Cards img={require("./assets/noimg.png")} />
+      <Cards
+        img={require("./assets/noimg.png")}
+        title="Кофе"
+        text="Сорта кофе в нашем кафе"
+        button="Узнать больше"
+      />
     </div>
   );
 }
