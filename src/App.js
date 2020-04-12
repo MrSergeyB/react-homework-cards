@@ -1,16 +1,25 @@
 import React from "react";
-import Cards from "./components/cards";
+import Card from "./components/card";
 import "./App.css";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <Cards
-        img={require("./assets/noimg.png")}
-        title="Кофе"
-        text="Сорта кофе в нашем кафе"
+      <Card
+        title="Кофе это наше все"
+        text="В качестве CSS вы можете использовать Bootstrap, а подглядеть"
         button="Узнать больше"
       />
+      <br></br>
+      <br></br>
+
+      <Card
+        title="Кофе это наше все"
+        text="в этой карточке должно быть изображение"
+        button="Узнать больше"
+      >
+        <img src={require("./assets/noimg.png")} style={{height: "10em"}} />
+      </Card>
     </div>
   );
 }
